@@ -3,3 +3,6 @@ inputs:
     url: github:cachix/devenv-nixpkgs/rolling
   git-hooks:
     url: github:cachix/git-hooks.nix
+  agent-platform:
+    url: github:fagenorn/nix-config
+    flake: false

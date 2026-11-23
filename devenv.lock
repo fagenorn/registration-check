@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "agent-platform": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1795448336,
+        "narHash": "sha256-RgqWIh3fP+y01aL4IV6GHRhMr3rGckpUwhoSEWtfIzY=",
+        "owner": "fagenorn",
+        "repo": "nix-config",
+        "rev": "e5b18842af71f53eaa482b6575b0fc0b1ce99a5f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fagenorn",
+        "repo": "nix-config",
+        "type": "github"
+      }
+    },
     "devenv": {
       "locked": {
         "dir": "src/modules",
@@ -106,6 +122,7 @@
     },
     "root": {
       "inputs": {
+        "agent-platform": "agent-platform",
         "devenv": "devenv",
         "git-hooks": "git-hooks",
         "nixpkgs": "nixpkgs_2"

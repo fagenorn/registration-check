@@ -2,7 +2,13 @@
   "required_status_checks": {
     "strict": true,
     "checks": [
-      {"context": "Tests", "app_id": 15368}
+      {
+        "context": "Tests",
+        "app_id": 15368
+      },
+      {
+        "context": "Conformance"
+      }
     ]
   },
   "enforce_admins": true,
