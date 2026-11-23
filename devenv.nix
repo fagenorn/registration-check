@@ -1,10 +1,12 @@
 { pkgs, ... }:
 {
-  packages = [ pkgs.python3 ];
-  git-hooks.hooks.check-greeting = {
+  # `hello` exists only inside this development environment, so the commit hook
+  # fails when a commit is made outside it and passes when made through it.
+  packages = [ pkgs.hello ];
+  git-hooks.hooks.needs-dev-shell = {
     enable = true;
-    name = "check-greeting";
-    entry = "python3 check.py";
+    name = "needs-dev-shell";
+    entry = "hello";
     pass_filenames = false;
     always_run = true;
   };
