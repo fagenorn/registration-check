@@ -1,0 +1,57 @@
+{
+  "bindings": {
+    "commands": {
+      "lint": {
+        "argv": [
+          "true"
+        ]
+      },
+      "test": {
+        "argv": [
+          "true"
+        ]
+      }
+    },
+    "vcs": {
+      "integration_branch": "main"
+    }
+  },
+  "capabilities": {
+    "knowledge.architecture": {
+      "support": "unsupported"
+    },
+    "knowledge.context": {
+      "support": "unsupported"
+    },
+    "knowledge.hints": {
+      "support": "unsupported"
+    },
+    "knowledge.standards": {
+      "support": "unsupported"
+    },
+    "review.code": {
+      "support": "supported"
+    },
+    "review.plan": {
+      "support": "supported"
+    },
+    "tracker": {
+      "support": "supported"
+    },
+    "verification": {
+      "support": "supported"
+    },
+    "worktrees": {
+      "support": "supported"
+    }
+  },
+  "projections": [
+    {
+      "id": "conformance.workflow",
+      "kind": "conformance_workflow",
+      "target": ".github/workflows/conformance.yaml"
+    }
+  ],
+  "release": "unsupported",
+  "schema_version": 3
+}
